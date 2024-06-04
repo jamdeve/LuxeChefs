@@ -1,0 +1,36 @@
+---
+import Logo from '../assets/LOGO.png'
+
+const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
+---
+
+<footer class="footer" id="footer">
+    <img class="logo" src={logoSrc} alt="">
+    <p>©2024 LUXE CHEFS - DISEÑO WEB JAMDEVE</p>
+</footer>
+
+<style>
+
+.footer{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    max-width: 80px;
+}
+
+.footer p{
+    color: rgb(104, 104, 104);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+</style>
