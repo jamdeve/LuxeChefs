@@ -1,0 +1,82 @@
+---
+import logo from '../assets/LOGO.png';
+---
+
+<section class="somos" id="somos">
+    <div class="wrapper somos-wrapper">
+        <div class="somos-content">
+            <article class="somos-article">
+                <h2 class="somos-tittle">SOMOS LUXE CHEFS</h2>
+                <p class="somos-description">
+                    ¡Bienvenidos a Luxe Chefs!
+                </p>
+                <p class="somos-description">
+                    En Luxe Chefs, nos enorgullece ofrecer un servicio de chefs privados de lujo diseñado exclusivamente para personas y familias que desean experimentar la excelencia culinaria sin tener que cocinar nunca más en la comodidad de su hogar.
+                </p>
+                <p class="somos-description">
+                    Nuestro equipo de talentosos y apasionados chefs se especializa en crear experiencias gastronómicas inolvidables, satisfaciendo los paladares más exigentes y superando todas las expectativas.
+                </p>
+                <p class="somos-description">
+                    Cada uno de nuestros chefs cuenta con un amplio conocimiento en técnicas culinarias innovadoras y una creatividad sin límites, lo que les permite diseñar menús personalizados que reflejan los gustos y preferencias individuales de nuestros clientes.
+                </p>
+            </article>
+            <img class="logo" src={logo.src} alt="">
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .somos{
+        background-color: black;
+    }
+
+    .somos-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 0 50px 0;
+    }
+
+    .somos-article{
+        color: #FFEDBE;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.3rem;
+        flex: 2;
+    }
+
+    .logo{
+        max-width: 50%;
+        flex: 1;
+    }
+
+    .somos-tittle{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #F1CB6B, #8A6300); /* Cambia estos colores por los que desees */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+    }
+    @media screen and (max-width: 768px) {
+        .somos-article{
+            width: 90%;
+        }
+
+        .somos-tittle{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .somos-content{
+            flex-direction: column;
+        }
+
+        .logo{
+            max-width: 70%;
+        }
+    }
+</style>

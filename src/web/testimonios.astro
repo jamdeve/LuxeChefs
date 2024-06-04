@@ -1,0 +1,118 @@
+---
+import Test1 from '../assets/testimonio1.jpeg'
+import Test2 from '../assets/testimonio2.jpeg'
+import Test3 from '../assets/testimonio3.jpeg'
+---
+
+<section class="testimonios" id="testimonios">
+    <div class="wrapper testimonios-wrapper">
+        <div class="testimonios-content">
+            <h2 class="testimonios-tittle" >TESTIMONIOS</h2>
+            <h2 class="testimonios-subtittle" >"Lo que dicen nuestros clientes"</h2>
+            <div class="testimonios-container">
+                <div class="testimonios-item">
+                    <p class="comentario">
+                        "Contratar un chef privado a través de esta agencia ha sido una experiencia increíble. Ahora disfrutamos de comidas deliciosas y personalizadas sin preocuparnos por cocinar. ¡Nos ha ahorrado tanto tiempo y esfuerzo!"
+                    </p>
+                    <img class="avatar" src={Test1.src} alt="">
+                    <span class="nombre">Julio Espinosa</span>
+                    <span class="descripcion">Emprendedor autónomo</span>
+                </div>
+                <div class="testimonios-item">
+                    <p class="comentario">
+                        "Trabajando en desarrollo de software, el tiempo es oro. Gracias a nuestro chef privado, ahora disfrutamos de comidas deliciosas y bien preparadas sin sacrificar tiempo valioso. ¡Un servicio excepcional!"
+                    </p>
+                    <img class="avatar" src={Test2.src} alt="">
+                    <span class="nombre">Francesca Hermida</span>
+                    <span class="descripcion">Desarrolladora de Software</span>
+                </div>
+                <div class="testimonios-item">
+                    <p class="comentario">
+                        "Como neuróloga con una agenda muy ocupada, contar con un chef privado ha sido una bendición. Ahora disfruto de comidas saludables y gourmet sin dedicar tiempo a la cocina. ¡Lo recomiendo totalmente!"
+                    </p>
+                    <img class="avatar" src={Test3.src} alt="">
+                    <span class="nombre">Natalia Hidalgo</span>
+                    <span class="descripcion">Neuróloga</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .testimonios{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .testimonios-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0px;
+    }
+
+    .testimonios-tittle{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #F1CB6B, #8A6300);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .testimonios-subtittle{
+        font-size: 30px;
+        font-weight: bold;
+        background: linear-gradient(to right, #F1CB6B, #8A6300);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .testimonios-container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 70px 0;
+    }
+
+    .testimonios-item{
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comentario{
+        height: 70%;
+    }
+
+    .avatar{
+        border-radius: 50%;
+        max-width: 80px;
+        margin-top: 40px;
+    }
+
+    .nombre{
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .descripcion{
+        
+    }
+
+    @media screen and (max-width: 768px) {
+        .testimonios-container{
+            flex-direction: column;
+        }
+        
+    }
+</style>

@@ -1,6 +1,8 @@
 ---
     import Logo from '../assets/LOGO.png'
     import Bg from '../assets/heroImg.jpeg'
+    import Sarten from '../assets/sarten.svg'
+    import SartenBlanca from '../assets/sartenBlanca.png'
     
 
     const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
@@ -23,7 +25,12 @@
             <div class="cta__container">
                 <a class="hero__cta" href="#">Contáctanos</a>
             </div>
+            <div class="sarten-container">
+                
+            </div>
+            
         </div>
+        
     </div>
 </div>
 
@@ -32,7 +39,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Lexend:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
     .hero{
-        width: 100vw;
+        width: 100%;
         min-height: 100svh;
         position: relative;
         overflow: hidden;
@@ -62,7 +69,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        
+        position: relative;
         padding: 20px;
     }
 
@@ -81,6 +88,7 @@
         background: linear-gradient(to right, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 40%, rgb(247, 227, 155) 60%, rgb(255, 255, 255) 80%);
         color: transparent;
         background-size: 200%;
+        text-align: center;
         animation: shine 6s linear infinite;
         background-clip: text;
         font-size: 1.8rem;
@@ -91,30 +99,68 @@
     .cta__container{
         background-color: #363636;
         margin-top: 20px;
-        padding: 10px 25px;
         border-radius: 10px;
+        padding: 10px 0px;
+        transition: all 0.3s ease;
+    }
+
+    .cta__container:hover{
+        opacity: 0.6;
     }
 
     .hero__cta{
         text-decoration: none;
-        background: linear-gradient(to right, rgb(255, 208, 0) 20%, rgb(255, 245, 199) 40%, rgb(255, 245, 199) 60%, rgb(255, 208, 0) 80%);
-        color: transparent;
-        background-size: 200%;
-        animation: shine 3s linear infinite;
-        background-clip: text;
+        background: linear-gradient(to right, #F1CB6B, #8A6300); /* Cambia estos colores por los que desees */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: bold;
         font-size: 1.8rem;
-        
+        animation: flip 5s ease-in-out infinite;
+        cursor: pointer;
+        padding: 10px 25px;
     }
+
 
     .logo{
         display: none;
+    }
+
+    .sarten-container{
+       position: absolute;
+       top: -80px;
+       left: 5px;
+       z-index: -10;
+    }
+
+    .sarten{
+        width: 800px;
+        rotate: 45deg;
+        animation: flip 5s ease-in-out infinite;
+        opacity: 0.;
+        
+        filter: drop-shadow(0 0 15px rgba(245, 241, 193, 0.356));
     }
 
     @keyframes shine{
         to {
             background-position: 200% center;
         }
+    }
+
+    @keyframes flip {
+        0% {
+        transform: rotate(-5deg) translateY(0);
+    }
+    25% {
+        transform: rotate(7deg) translateY(5px);
+    }
+    50% {
+        transform: rotate(-3deg) translateY(-20px);
+    }
+    
+    100% {
+        transform: rotate(-5deg) translateY(0);
+    }
     }
 
     @media screen and (max-width: 768px) {
@@ -130,6 +176,12 @@
 
         .logo{
             display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sarten-container{
+            display: none;
         }
     }
 

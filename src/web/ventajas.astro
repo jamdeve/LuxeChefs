@@ -1,0 +1,196 @@
+---
+import Star from '../assets/Star.svg'
+import Profesionalidad from '../assets/profesionalidad.svg'
+import Comodidad from '../assets/comodidad.svg'
+import Altacocina from '../assets/altacocina.svg'
+---
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const revealElements = document.querySelectorAll('.ventaja-nombre')
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('ventaja-nombre--chefs')) {
+              animateCount(entry.target as HTMLElement, 0, 500, 1500, '+', ' CHEFS')
+            } else if (entry.target.classList.contains('ventaja-nombre--clientes')) {
+              animateCount(entry.target as HTMLElement, 0, 120, 1500, '+', ' CLIENTES')
+            } else if (entry.target.classList.contains('ventaja-nombre--ahorro')) {
+              animateCount(entry.target as HTMLElement, 0, 60, 1500, '+', 'h AHORRADAS')
+            }
+          }
+        })
+      })
+  
+      revealElements.forEach((element) => {
+        observer.observe(element)
+      })
+    })
+  
+    function animateCount(
+      element: HTMLElement,
+      start: number,
+      end: number,
+      duration: number,
+      prefix: string = '',
+      suffix: string = ''
+    ): void {
+      let startTime: number | null = null
+  
+      function animation(currentTime: number): void {
+        if (startTime === null) startTime = currentTime
+        const timeElapsed = currentTime - startTime
+        const progress = Math.min(timeElapsed / duration, 1)
+        element.textContent = `${prefix}${Math.floor(progress * (end - start) + start).toString()}${suffix}`
+  
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation)
+        }
+      }
+  
+      requestAnimationFrame(animation)
+    }
+  </script>
+
+<section class="ventajas" id="ventajas">
+    <div class="wrapper ventajas-wrapper">
+        <div class="ventajas-content">
+            <div class="ventajas-tittle-container">
+                <img src={Star.src} alt="">
+                <h2 class="ventajas-tittle" >¿POR QUÉ ELEGIRNOS?</h2>
+                <img src={Star.src} alt="">
+            </div>
+            
+            <ul class="ventajas-list">
+                <li class="ventajas-item">
+                    <img class="ventajas-imagen" src={Profesionalidad.src} alt="">
+                    <h3 class="ventajas-nombre">Profesionalidad</h3>
+                    <p class="ventajas-parrafo">
+                        Nuestros chefs, con formación en restaurantes galardonados con estrellas Michelin, demuestran un profesionalismo excepcional. 
+                    </p>
+                </li>
+                <li class="ventajas-item">
+                    <img class="ventajas-imagen" src={Comodidad.src} alt="">
+                    <h3 class="ventajas-nombre">Comodidad</h3>
+                    <p class="ventajas-parrafo">
+                        Nos encargamos de todo para que tú solo disfrutes. Desde la planificación del menú hasta la limpieza final, nuestro equipo se ocupa de cada detalle. Relájate y deja que nuestros chefs trabajen.
+                    </p>
+                </li>
+                <li class="ventajas-item">
+                    <img class="ventajas-imagen" src={Altacocina.src} alt="">
+                    <h3 class="ventajas-nombre">Alta Cocina</h3>
+                    <p class="ventajas-parrafo">
+                        Nuestros chefs no solo crean menús exquisitos, sino que también se encargan personalmente de seleccionar y adquirir los ingredientes más frescos y de la más alta calidad. Con una dedicación inigualable a la alta cocina.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="ventajas-numeros">
+        <div class="ventajas-numeros-item">
+            <span class="ventaja-nombre ventaja-nombre--chefs">+500 CHEFS</span>
+            <p class="ventaja-descripcion">En Luxe Chefs contamos con una gran cantidad de chefs profesionales ubicados en distintas partes del mundo.</p>
+        </div>
+        <div class="ventajas-numeros-item">
+            <span class="ventaja-nombre ventaja-nombre--clientes">+120 CLIENTES</span>
+            <p class="ventaja-descripcion">Debido a nuestro gran esfuerzo en satisfacer las necesidades de nuestros clientes, hemos podido llegar a la cifra de más de 120 clientes satisfechos.</p>
+        </div>
+        <div class="ventajas-numeros-item">
+            <span class="ventaja-nombre ventaja-nombre--ahorro">+60h AHORRADAS</span>
+            <p class="ventaja-descripcion">Ya que nuestros chefs se encargarán de la cocina y de los ingredientes necesarios para cocinarle, usted ahorrará una gran cantidad de horas al mes.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .ventajas{
+        background-color: white;
+    }
+
+    .ventajas-content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0px;
+    }
+
+    .ventajas-tittle-container{
+        display: flex;
+        gap: 5px;
+        padding: 50px 0;
+    }
+
+    .ventajas-tittle{
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+
+    .ventajas-list{
+        display: flex;
+        text-align: center;
+    }
+
+    .ventajas-item{
+        list-style: none;
+        flex: 1;
+    }
+
+    .ventajas-imagen{
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .ventajas-nombre{
+        margin: 5px;
+        font-size: 1.8rem;
+    }
+
+    .ventajas-parrafo{
+        margin: 10px;
+        font-size: 1.3rem;
+    }
+
+    .ventajas-numeros{
+        margin: auto;
+        width: 100%;
+        background: linear-gradient(transparent, #f1ae035d); 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ventajas-numeros-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+    }
+
+    .ventaja-nombre{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .ventaja-descripcion{
+        font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .ventajas-list{
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .ventajas-numeros{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+</style>

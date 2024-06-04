@@ -1,0 +1,82 @@
+
+---
+import GarantiaImg from '../assets/garantia.svg'
+---
+
+<section class="garantia" id="garantia">
+    <div class="wrapper somos-garantia">
+        <div class="garantia-content">
+            <img class="logo" src={GarantiaImg.src} alt="">
+            <article class="garantia-article">
+                <h2 class="garantia-tittle">-GARANTÍA DE BIENESTAR-</h2>
+                <p class="garantia-description">
+                    Tenemos un sistema de trabajo al que le llamamos garantía de bienestar, este sistema fue diseñado y creado para tener al cliente siempre contento y satisfecho con el servicio.
+                </p>
+                <p class="garantia-description">
+                    Este sistema consiste en lo siguiente: Al cliente se le mostrará el Chef seleccionado para cubrir su demanda, si el cliente está de acuerdo y le gusta el perfil del Chef será el seleccionado para el cliente. En caso que el cliente quisiera cambiar de Chef por alguna razón nosotros haríamos el mismo proceso con otro de nuestros Chefs de nuestro gran equipo, así hasta que el cliente encontrara el Chef ideal.
+                </p>
+                <p class="garantia-description">
+                    Es muy poco común que el cliente quiera cambiar de Chef, ya que con el primer Chef seleccionado suelen estar muy contentos y satisfechos, pero nosotros siempre ofrecemos esta garantía de bienestar para que se sientan tranquilos, seguros y cómodos.
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .garantia{
+        background-color: black;
+    }
+
+    .garantia-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 50px 0 50px 0;
+    }
+
+    .garantia-article{
+        color: #FFEDBE;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.3rem;
+        flex: 2;
+        text-align: center;
+    }
+
+    .logo{
+        max-width: 50%;
+        flex: 1;
+    }
+
+    .garantia-tittle{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #F1CB6B, #8A6300); /* Cambia estos colores por los que desees */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        
+    }
+    @media screen and (max-width: 768px) {
+        .garantia-article{
+            width: 90%;
+        }
+
+        .garantia-tittle{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .garantia-content{
+            flex-direction: column;
+        }
+
+        .logo{
+            max-width: 70%;
+        }
+    }
+</style>
