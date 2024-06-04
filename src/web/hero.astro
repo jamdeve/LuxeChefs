@@ -1,0 +1,137 @@
+---
+    import Logo from '../assets/LOGO.png'
+    import Bg from '../assets/heroImg.jpeg'
+    
+
+    const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
+    const bgSrc = Bg.src.startsWith('/') ? Bg.src.slice(1) : Bg.src;
+---
+
+
+
+<div class="hero">
+    <img class="background" src={Bg.src}>
+    <div class="wrapper hero-wrapper">
+        <div class="hero-content">
+            <h1 class="tittle">
+                LUXE CHEFS
+            </h1>
+            <h2 class="subtittle">
+                “Tu Chef Personal en casa”
+            </h2>
+            <img class="logo" src={Logo.src} width={200} height={200} alt="Logo" />
+            <div class="cta__container">
+                <a class="hero__cta" href="#">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Lancelot&family=Lexend:wght@100..900&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+    .hero{
+        width: 100vw;
+        min-height: 100svh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .background{
+        position: absolute;
+        width: 100%;
+        object-fit:cover;
+        z-index: -10;
+        transition: opacity 0.5s ease-in-out;
+        filter: blur(10px);
+        filter: brightness(0.35);
+        opacity: 0.5;
+    }
+
+    .hero-wrapper{
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        
+        padding: 20px;
+    }
+
+    .tittle{
+        background: linear-gradient(to right, rgb(255, 208, 0) 20%, rgb(255, 245, 199) 40%, rgb(255, 245, 199) 60%, rgb(255, 208, 0) 80%);
+        color: transparent;
+        font-size: 90px;
+        background-size: 200%;
+        animation: shine 3s linear infinite;
+        background-clip: text;
+        font-family: "Playfair Display", serif;
+        filter: drop-shadow(0 0 15px rgb(0, 0, 0));
+    }
+
+    .subtittle{
+        background: linear-gradient(to right, rgb(255, 255, 255) 20%, rgb(255, 255, 255) 40%, rgb(247, 227, 155) 60%, rgb(255, 255, 255) 80%);
+        color: transparent;
+        background-size: 200%;
+        animation: shine 6s linear infinite;
+        background-clip: text;
+        font-size: 1.8rem;
+        -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+        filter: drop-shadow(0 0 15px rgb(0, 0, 0));
+    }
+
+    .cta__container{
+        background-color: #363636;
+        margin-top: 20px;
+        padding: 10px 25px;
+        border-radius: 10px;
+    }
+
+    .hero__cta{
+        text-decoration: none;
+        background: linear-gradient(to right, rgb(255, 208, 0) 20%, rgb(255, 245, 199) 40%, rgb(255, 245, 199) 60%, rgb(255, 208, 0) 80%);
+        color: transparent;
+        background-size: 200%;
+        animation: shine 3s linear infinite;
+        background-clip: text;
+        font-weight: bold;
+        font-size: 1.8rem;
+        
+    }
+
+    .logo{
+        display: none;
+    }
+
+    @keyframes shine{
+        to {
+            background-position: 200% center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .background{
+            min-height: 100%;
+        }
+
+        .tittle{
+            font-size: 4rem;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo{
+            display: block;
+        }
+    }
+
+
+</style>
