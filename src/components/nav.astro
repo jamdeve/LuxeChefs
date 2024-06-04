@@ -43,13 +43,16 @@ const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
                         <a class="mobile-item-link" href="#inicio">INICIO</a>
                     </li>
                     <li class="mobile-list-item">
-                        <a class="mobile-item-link" href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li class="mobile-list-item">
                         <a class="mobile-item-link" href="#somos">SOMOS</a>
                     </li>
                     <li class="mobile-list-item">
-                        <a class="mobile-item-link" href="#cocteles">CONTACTO</a>
+                        <a class="mobile-item-link" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="item-link" href="#testimonios">TESTIMONIOS</a>
+                    </li>
+                    <li class="mobile-list-item">
+                        <a class="mobile-item-link" href="#contacto">CONTACTO</a>
                     </li>
                     <li class="mobile-list-item">
                         <a class="mobile-item-link" href="#galeria">TRABAJA CON NOSOTROS</a>
@@ -67,14 +70,18 @@ const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
                 <a class="item-link" href="#inicio">INICIO</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#servicios">SERVICIOS</a>
-            </li>
-            <li class="list-item">
                 <a class="item-link" href="#somos">SOMOS</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#cocteles">CONTACTO</a>
+                <a class="item-link" href="#servicios">SERVICIOS</a>
             </li>
+            <li class="list-item">
+                <a class="item-link" href="#testimonios">TESTIMONIOS</a>
+            </li>
+            <li class="list-item">
+                <a class="item-link" href="#contacto">CONTACTO</a>
+            </li>
+            
             <li class="list-item">
                 <a class="item-link" href="#galeria">TRABAJA CON NOSOTROS</a>
             </li>
@@ -137,6 +144,12 @@ const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
         line-height: 50px;
         font-weight: 700;
         color: inherit;
+        transition: all 0.2s ease;
+    }
+
+    .item-link:hover{
+        opacity: 0.6;
+        text-decoration: underline;
     }
 
     .menu-mobile-modal{
