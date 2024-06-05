@@ -4,7 +4,7 @@ import 'html-escaper';
 import 'clsx';
 /* empty css                          */
 
-const $$Astro = createAstro("https://jamdeve.github.io/");
+const $$Astro = createAstro("https://luxe-chefs.vercel.app/");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
