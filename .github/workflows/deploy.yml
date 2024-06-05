@@ -1,14 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Activa el flujo de trabajo cada vez que hagas push a la rama `main`
-  # Usando un nombre de rama diferente? Reemplaza `main` con el nombre de tu rama
   push:
     branches: [ main ]
-  # Te permite ejecutar este flujo de trabajo manualmente desde la pestaña Acciones en GitHub.
   workflow_dispatch:
 
-# Permite que este trabajo clone el repositorio y cree un despliegue de página
 permissions:
   contents: read
   pages: write
@@ -20,12 +16,24 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Install, build, and upload your site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.2.0'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Upload to GitHub Pages
         uses: withastro/action@v2
         with:
-            package-manager: npm
-            path: 'docs'
-            node-version: 22.2.0
+          path: 'docs'
+          package-manager: npm # O 'yarn' o 'pnpm' dependiendo de tu proyecto
+          node-version: 22.2.0
 
   deploy:
     needs: build
