@@ -13,11 +13,13 @@
 		},
 		{
 			"src": "^\\/_image$",
-			"dest": "_render"
+			"dest": "_render",
+			"runtime": "node18.14.2"
 		},
 		{
 			"src": "^\\/$",
-			"dest": "_render"
+			"dest": "_render",
+			"runtime": "node18.14.2"
 		}
 	]
 }
