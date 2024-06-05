@@ -3,16 +3,18 @@ import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
 /* empty css                          */
+import $$Trabajar from './trabajar_Bl2qPg8B.mjs';
+/* empty css                          */
 
 const $$Astro = createAstro();
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
   const { title } = Astro2.props;
-  return renderTemplate`<html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderHead()}</head> <body> ${renderSlot($$result, $$slots["default"])} </body></html>`;
+  return renderTemplate` <html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderHead()}</head> <body> ${renderSlot($$result, $$slots["default"])} </body></html>`;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/layouts/Layout.astro", void 0);
 
-const Logo = new Proxy({"src":"/astro/LOGO.BAARfT2e.png","width":1090,"height":862,"format":"png"}, {
+const logo = new Proxy({"src":"/astro/LOGO.BAARfT2e.png","width":1090,"height":862,"format":"png"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -26,9 +28,14 @@ const Logo = new Proxy({"src":"/astro/LOGO.BAARfT2e.png","width":1090,"height":8
 					});
 
 const $$Nav = createComponent(($$result, $$props, $$slots) => {
-  Logo.src.startsWith("/") ? Logo.src.slice(1) : Logo.src;
-  return renderTemplate` ${maybeRenderHead()}<nav class="nav" id="nav" data-astro-cid-d6vcou2g> <div class="wrapper nav-wrapper" data-astro-cid-d6vcou2g> <img class="logo"${addAttribute(Logo.src, "src")} alt="Logo" data-astro-cid-d6vcou2g> <svg class="menu-mobile" id="menu-mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;" data-astro-cid-d6vcou2g><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" data-astro-cid-d6vcou2g></path></svg> <div class="menu-mobile-modal disable" id="mobile-modal" data-astro-cid-d6vcou2g> <div class="menu-mobile-container" data-astro-cid-d6vcou2g> <ul class="mobile-list" data-astro-cid-d6vcou2g> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#galeria" data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#eventos" data-astro-cid-d6vcou2g>FyQ</a> </li> </ul> </div> </div> <ul class="list" data-astro-cid-d6vcou2g> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#galeria" data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#eventos" data-astro-cid-d6vcou2g>FyQ</a> </li> </ul> </div> </nav> `;
+  logo.src.startsWith("/") ? logo.src.slice(1) : logo.src;
+  return renderTemplate` ${maybeRenderHead()}<nav class="nav" id="nav" data-astro-cid-d6vcou2g> <div class="wrapper nav-wrapper" data-astro-cid-d6vcou2g> <img class="logo"${addAttribute(logo.src, "src")} alt="Logo" data-astro-cid-d6vcou2g> <svg class="menu-mobile" id="menu-mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;" data-astro-cid-d6vcou2g><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" data-astro-cid-d6vcou2g></path></svg> <div class="menu-mobile-modal disable" id="mobile-modal" data-astro-cid-d6vcou2g> <div class="menu-mobile-container" data-astro-cid-d6vcou2g> <ul class="mobile-list" data-astro-cid-d6vcou2g> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#faq" data-astro-cid-d6vcou2g>FAQ</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link"${addAttribute($$Trabajar, "href")} data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> </ul> </div> </div> <ul class="list" data-astro-cid-d6vcou2g> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#faq" data-astro-cid-d6vcou2g>FAQ</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="/trabajar" data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> </ul> </div> </nav> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/components/nav.astro", void 0);
+
+const $$Footer = createComponent(($$result, $$props, $$slots) => {
+  const logoSrc = logo.src.startsWith("/") ? logo.src.slice(1) : logo.src;
+  return renderTemplate`${maybeRenderHead()}<footer class="footer" id="footer" data-astro-cid-k2f5zb5c> <img class="logo"${addAttribute(logoSrc, "src")} alt="" data-astro-cid-k2f5zb5c> <p data-astro-cid-k2f5zb5c>©2024 LUXE CHEFS - DISEÑO WEB JAMDEVE</p> </footer> `;
+}, "/home/jamdeve/dev/Github/LuxeChefs/src/components/footer.astro", void 0);
 
 const Bg = new Proxy({"src":"/astro/heroImg.BiIDFg_K.jpeg","width":736,"height":552,"format":"jpg"}, {
 						get(target, name, receiver) {
@@ -44,13 +51,13 @@ const Bg = new Proxy({"src":"/astro/heroImg.BiIDFg_K.jpeg","width":736,"height":
 					});
 
 const $$Hero = createComponent(($$result, $$props, $$slots) => {
-  Logo.src.startsWith("/") ? Logo.src.slice(1) : Logo.src;
+  logo.src.startsWith("/") ? logo.src.slice(1) : logo.src;
   Bg.src.startsWith("/") ? Bg.src.slice(1) : Bg.src;
   return renderTemplate`${maybeRenderHead()}<div class="hero" data-astro-cid-2wwzl3ii> <img class="background"${addAttribute(Bg.src, "src")} data-astro-cid-2wwzl3ii> <div class="wrapper hero-wrapper" data-astro-cid-2wwzl3ii> <div class="hero-content" data-astro-cid-2wwzl3ii> <h1 class="tittle" data-astro-cid-2wwzl3ii>
 LUXE CHEFS
 </h1> <h2 class="subtittle" data-astro-cid-2wwzl3ii>
 “Tu Chef Personal en casa”
-</h2> <img class="logo"${addAttribute(Logo.src, "src")}${addAttribute(200, "width")}${addAttribute(200, "height")} alt="Logo" data-astro-cid-2wwzl3ii> <div class="cta__container" data-astro-cid-2wwzl3ii> <a class="hero__cta" href="#contacto" data-astro-cid-2wwzl3ii>Contáctanos</a> </div> <div class="sarten-container" data-astro-cid-2wwzl3ii></div> </div> </div> </div> `;
+</h2> <img class="logo"${addAttribute(logo.src, "src")}${addAttribute(200, "width")}${addAttribute(200, "height")} alt="Logo" data-astro-cid-2wwzl3ii> <div class="cta__container" data-astro-cid-2wwzl3ii> <a class="hero__cta" href="#contacto" data-astro-cid-2wwzl3ii>Contáctanos</a> </div> <div class="sarten-container" data-astro-cid-2wwzl3ii></div> </div> </div> </div> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/hero.astro", void 0);
 
 const $$Servicios = createComponent(($$result, $$props, $$slots) => {
@@ -68,7 +75,7 @@ En Luxe Chefs, nos enorgullece ofrecer un servicio de chefs privados de lujo dis
 Nuestro equipo de talentosos y apasionados chefs se especializa en crear experiencias gastronómicas inolvidables, satisfaciendo los paladares más exigentes y superando todas las expectativas.
 </p> <p class="somos-description" data-astro-cid-qy4lt7y5>
 Cada uno de nuestros chefs cuenta con un amplio conocimiento en técnicas culinarias innovadoras y una creatividad sin límites, lo que les permite diseñar menús personalizados que reflejan los gustos y preferencias individuales de nuestros clientes.
-</p> </article> <img class="logo"${addAttribute(Logo.src, "src")} alt="" data-astro-cid-qy4lt7y5> </div> </div> </section> `;
+</p> </article> <img class="logo"${addAttribute(logo.src, "src")} alt="" data-astro-cid-qy4lt7y5> </div> </div> </section> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/nosotros.astro", void 0);
 
 const Star = new Proxy({"src":"/astro/Star.D6eVIpGw.svg","width":37,"height":40,"format":"svg"}, {
@@ -210,16 +217,32 @@ const $$Contacto = createComponent(($$result, $$props, $$slots) => {
 <input type="email" name="email" id="email" placeholder="example@gmail.com" required data-astro-cid-dciakht6> <label for="telefono" data-astro-cid-dciakht6>Teléfono</label> <input type="tel" name="telefono" id="telefono" placeholder="+34 276 728 929" data-astro-cid-dciakht6> <label for="mensaje" data-astro-cid-dciakht6>Mensaje</label> <textarea name="mensaje" id="mensaje" placeholder="Buenas Luxe Chefs..." maxlength="300" data-astro-cid-dciakht6></textarea> <input type="submit" name="enviar" value="enviar mensaje" data-astro-cid-dciakht6> </form> </div> </div> </section> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/contacto.astro", void 0);
 
-const $$Footer = createComponent(($$result, $$props, $$slots) => {
-  const logoSrc = Logo.src.startsWith("/") ? Logo.src.slice(1) : Logo.src;
-  return renderTemplate`${maybeRenderHead()}<footer class="footer" id="footer" data-astro-cid-k2f5zb5c> <img class="logo"${addAttribute(logoSrc, "src")} alt="" data-astro-cid-k2f5zb5c> <p data-astro-cid-k2f5zb5c>©2024 LUXE CHEFS - DISEÑO WEB JAMDEVE</p> </footer> `;
-}, "/home/jamdeve/dev/Github/LuxeChefs/src/components/footer.astro", void 0);
+const $$Faq = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${maybeRenderHead()}<section class="faq" id="faq" data-astro-cid-i66fzixh> <div class="wrapper faq-wrapper" data-astro-cid-i66fzixh> <div class="faq-content" data-astro-cid-i66fzixh> <div class="faq-tittle-container" data-astro-cid-i66fzixh> <h2 class="faq-tittle" data-astro-cid-i66fzixh>FAQ</h2> <h3 class="faq-subtittle" data-astro-cid-i66fzixh>Preguntas Frecuentes</h3> </div> <ul class="faq-list" data-astro-cid-i66fzixh> <li class="faq-item" data-astro-cid-i66fzixh> <details class="details" data-astro-cid-i66fzixh> <summary class="summary" data-astro-cid-i66fzixh>¿Qué puedo personalizar del servicio?</summary> <div class="faq-answer" data-astro-cid-i66fzixh>La respuesta a esta pregunta es fácil, TODO. Lo primero en lo que pensamos y para lo que estamos aquí es tu comodidad, por eso puedes personalizar las comidas semanales y diarias que deseas, si quieres que hagamos nosotros la compra de los productos o no (la solemos hacer nosotros), que tipo de comida quieres y que menús, las personas a las que se le hará la comida, eventos puntuales de muchos comensales y más aspectos personales concretos.</div> </details> </li> <li class="faq-item" data-astro-cid-i66fzixh> <details class="details" data-astro-cid-i66fzixh> <summary class="summary" data-astro-cid-i66fzixh>¿Qué Chef se me asigna?</summary> <div class="faq-answer" data-astro-cid-i66fzixh>Nosotros a través de Email o WhatsApp (como usted prefiera) le propondremos el mejor Chef Personal de su zona. Usted lo valorará y decidirá si prefiere ese Chef propuesto o a otro que le podríamos proponer.</div> </details> </li> <li class="faq-item" data-astro-cid-i66fzixh> <details class="details" data-astro-cid-i66fzixh> <summary class="summary" data-astro-cid-i66fzixh>¿Cómo funciona el servicio paso a paso?</summary> <div class="faq-answer" data-astro-cid-i66fzixh>- Nuestro Chef Privado acordará cual será la compra de el día siguiente con usted, o incluso podrían planear toda la semana (como usted quiera), nuestros nutricionistas pueden encargarse de hacer el menú de toda la semana teniendo en cuenta sus gustos o podría usted proponer un menú directamente, como usted prefiera.
+
+                            1 - El Chef Personal realizaría la compra del día acordada.
+                            
+                            2 - El Chef Personal cocinaría la comida y la serviría.
+                            
+                            3 - El Chef Personal recogería y limpiaría lo utilizado para cocinar, los platos, cubiertos y la cocina.</div> </details> </li> <li class="faq-item" data-astro-cid-i66fzixh> <details class="details" data-astro-cid-i66fzixh> <summary class="summary" data-astro-cid-i66fzixh>¿Qué es vuestra conocida Garantía de Bienestar?</summary> <div class="faq-answer" data-astro-cid-i66fzixh>Tenemos un sistema de trabajo al que le llamamos garantía de bienestar, este sistema fue diseñado y creado para tener al cliente siempre contento y satisfecho con el servicio.
+
+                            Este sistema consiste en lo siguiente: Al cliente se le mostrará el Chef seleccionado para cubrir su demanda, si el cliente está de acuerdo y le gusta el perfil del Chef será el seleccionado para el cliente. En caso que el cliente quisiera cambiar de Chef por alguna razón nosotros haríamos el mismo proceso con otro de nuestros Chefs de nuestro gran equipo, así hasta que el cliente encontrara el Chef ideal.
+                            
+                            Es muy poco común que el cliente quiera cambiar de Chef, ya que con el primer Chef seleccionado suelen estar muy contentos y satisfechos, pero nosotros siempre ofrecemos esta garantía de bienestar para que se sientan tranquilos, seguros y cómodos.</div> </details> </li> </ul> </div> </div> </section> `;
+}, "/home/jamdeve/dev/Github/LuxeChefs/src/web/faq.astro", void 0);
 
 const $$Index = createComponent(($$result, $$props, $$slots) => {
-  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Luxe Chefs." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div id="inicio"></div> ${renderComponent($$result2, "Nav", $$Nav, {})} ${renderComponent($$result2, "Hero", $$Hero, {})} ${renderComponent($$result2, "Nosotros", $$Nosotros, {})} ${renderComponent($$result2, "Servicios", $$Servicios, {})} ${renderComponent($$result2, "Ventajas", $$Ventajas, {})} ${renderComponent($$result2, "Garantia", $$Garantia, {})} ${renderComponent($$result2, "Testimonios", $$Testimonios, {})} ${renderComponent($$result2, "Contacto", $$Contacto, {})} ${renderComponent($$result2, "Footer", $$Footer, {})} ` })}`;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Luxe Chefs." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<div id="inicio"></div> ${renderComponent($$result2, "Nav", $$Nav, {})} ${renderComponent($$result2, "Hero", $$Hero, {})} ${renderComponent($$result2, "Nosotros", $$Nosotros, {})} ${renderComponent($$result2, "Servicios", $$Servicios, {})} ${renderComponent($$result2, "Ventajas", $$Ventajas, {})} ${renderComponent($$result2, "Garantia", $$Garantia, {})} ${renderComponent($$result2, "Testimonios", $$Testimonios, {})} ${renderComponent($$result2, "Faq", $$Faq, {})} ${renderComponent($$result2, "Contacto", $$Contacto, {})} ${renderComponent($$result2, "Footer", $$Footer, {})} ` })}`;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/pages/index.astro", void 0);
 
 const $$file = "/home/jamdeve/dev/Github/LuxeChefs/src/pages/index.astro";
 const $$url = "";
 
-export { $$Index as default, $$file as file, $$url as url };
+const index = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$Index,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { $$Nav as $, $$Footer as a, $$Layout as b, index as i };

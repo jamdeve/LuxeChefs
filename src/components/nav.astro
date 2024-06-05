@@ -2,6 +2,7 @@
 import Logo from '../assets/LOGO.png'
 
 const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
+import Trabajar from '../pages/trabajar.astro'
 ---
 
 <script>
@@ -52,14 +53,15 @@ const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
                         <a class="mobile-item-link" href="#testimonios">TESTIMONIOS</a>
                     </li>
                     <li class="mobile-list-item">
+                        <a class="mobile-item-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="mobile-list-item">
                         <a class="mobile-item-link" href="#contacto">CONTACTO</a>
                     </li>
                     <li class="mobile-list-item">
-                        <a class="mobile-item-link" href="#galeria">TRABAJA CON NOSOTROS</a>
+                        <a class="mobile-item-link" href={Trabajar}>TRABAJA CON NOSOTROS</a>
                     </li>
-                    <li class="mobile-list-item">
-                        <a class="mobile-item-link" href="#eventos">FyQ</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -67,26 +69,26 @@ const logoSrc = Logo.src.startsWith('/') ? Logo.src.slice(1) : Logo.src;
         
         <ul class="list">
             <li class="list-item">
-                <a class="item-link" href="#inicio">INICIO</a>
+                <a class="item-link" href="/#inicio">INICIO</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#somos">SOMOS</a>
+                <a class="item-link" href="/#somos">SOMOS</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#servicios">SERVICIOS</a>
+                <a class="item-link" href="/#servicios">SERVICIOS</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#testimonios">TESTIMONIOS</a>
+                <a class="item-link" href="/#testimonios">TESTIMONIOS</a>
             </li>
             <li class="list-item">
-                <a class="item-link" href="#contacto">CONTACTO</a>
+                <a class="item-link" href="/#faq">FAQ</a>
+            </li>
+            <li class="list-item">
+                <a class="item-link" href="/#contacto">CONTACTO</a>
             </li>
             
             <li class="list-item">
-                <a class="item-link" href="#galeria">TRABAJA CON NOSOTROS</a>
-            </li>
-            <li class="list-item">
-                <a class="item-link" href="#eventos">FyQ</a>
+                <a class="item-link" href='/trabajar'>TRABAJA CON NOSOTROS</a>
             </li>
         </ul>
     </div>

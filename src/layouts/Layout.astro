@@ -6,6 +6,19 @@ interface Props {
 const { title } = Astro.props;
 ---
 
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Check if there is a hash in the URL
+      if (window.location.hash) {
+        const element = document.querySelector(window.location.hash);
+        if (element) {
+			setTimeout(()=>{element.scrollIntoView();},500)
+          
+        }
+      }
+    });
+</script>
+
 <!doctype html>
 <html lang="en">
 	<head>

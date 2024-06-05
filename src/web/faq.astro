@@ -1,0 +1,134 @@
+---
+
+---
+
+<section class="faq" id="faq">
+    <div class="wrapper faq-wrapper">
+        <div class="faq-content">
+            <div class="faq-tittle-container">
+                <h2 class="faq-tittle" >FAQ</h2>
+                <h3 class="faq-subtittle">Preguntas Frecuentes</h3>
+            </div>
+            
+            <ul class="faq-list">
+                <li class="faq-item">
+                    <details class="details">
+                        <summary class="summary">¿Qué puedo personalizar del servicio?</summary>
+                        <div class="faq-answer">La respuesta a esta pregunta es fácil, TODO. Lo primero en lo que pensamos y para lo que estamos aquí es tu comodidad, por eso puedes personalizar las comidas semanales y diarias que deseas, si quieres que hagamos nosotros la compra de los productos o no (la solemos hacer nosotros), que tipo de comida quieres y que menús, las personas a las que se le hará la comida, eventos puntuales de muchos comensales y más aspectos personales concretos.</div>
+                    </details>
+                </li>
+                <li class="faq-item">
+                    <details class="details">
+                        <summary class="summary">¿Qué Chef se me asigna?</summary>
+                        <div class="faq-answer">Nosotros a través de Email o WhatsApp (como usted prefiera) le propondremos el mejor Chef Personal de su zona. Usted lo valorará y decidirá si prefiere ese Chef propuesto o a otro que le podríamos proponer.</div>
+                    </details>
+                </li>
+                <li class="faq-item">
+                    <details class="details">
+                        <summary class="summary">¿Cómo funciona el servicio paso a paso?</summary>
+                        <div class="faq-answer">- Nuestro Chef Privado acordará cual será la compra de el día siguiente con usted, o incluso podrían planear toda la semana (como usted quiera), nuestros nutricionistas pueden encargarse de hacer el menú de toda la semana teniendo en cuenta sus gustos o podría usted proponer un menú directamente, como usted prefiera.
+
+                            1 - El Chef Personal realizaría la compra del día acordada.
+                            
+                            2 - El Chef Personal cocinaría la comida y la serviría.
+                            
+                            3 - El Chef Personal recogería y limpiaría lo utilizado para cocinar, los platos, cubiertos y la cocina.</div>
+                    </details>
+                </li>
+                <li class="faq-item">
+                    <details class="details">
+                        <summary class="summary">¿Qué es vuestra conocida Garantía de Bienestar?</summary>
+                        <div class="faq-answer">Tenemos un sistema de trabajo al que le llamamos garantía de bienestar, este sistema fue diseñado y creado para tener al cliente siempre contento y satisfecho con el servicio.
+
+                            Este sistema consiste en lo siguiente: Al cliente se le mostrará el Chef seleccionado para cubrir su demanda, si el cliente está de acuerdo y le gusta el perfil del Chef será el seleccionado para el cliente. En caso que el cliente quisiera cambiar de Chef por alguna razón nosotros haríamos el mismo proceso con otro de nuestros Chefs de nuestro gran equipo, así hasta que el cliente encontrara el Chef ideal.
+                            
+                            Es muy poco común que el cliente quiera cambiar de Chef, ya que con el primer Chef seleccionado suelen estar muy contentos y satisfechos, pero nosotros siempre ofrecemos esta garantía de bienestar para que se sientan tranquilos, seguros y cómodos.</div>
+                    </details>
+                </li>
+               
+            </ul>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .faq{
+        width: 100%;
+        overflow: hidden;
+        background-color: white;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .faq-content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0px;
+        font-size: 1.1rem;
+    }
+
+    .faq-tittle-container{
+        flex: 1;
+    }
+
+    .faq-list{
+        flex: 1;
+    }
+
+    .faq-item{
+        border: 1px solid black;
+        padding: 20px;
+        list-style: none;
+    }
+
+    
+
+    .faq-answer {
+        padding: 20px;
+    }
+
+    .details{
+        max-height: 22px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .details[open]{
+        max-height: 500px;
+    }
+
+    
+
+    .summary{
+        font-weight: bold;
+    }
+
+    .faq-tittle{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .faq-subtittle{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .faq-content{
+            gap: 5px;
+        }
+
+        .faq-container{
+            width: 80%;
+            flex-direction: column;
+        }
+
+        .faq-list{
+            gap: 20px;
+            padding: 0px 50px;
+        }
+    }
+</style>
