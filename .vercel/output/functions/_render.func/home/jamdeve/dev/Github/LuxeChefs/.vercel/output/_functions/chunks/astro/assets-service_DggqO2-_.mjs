@@ -280,7 +280,7 @@ const baseService = {
     Object.entries(params).forEach(([param, key]) => {
       options[key] && searchParams.append(param, options[key].toString());
     });
-    const imageEndpoint = joinPaths("/LuxeChefs/", "/_image");
+    const imageEndpoint = joinPaths("/LuxeChefs", "/_image");
     return `${imageEndpoint}?${searchParams}`;
   },
   parseURL(url) {
