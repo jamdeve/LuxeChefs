@@ -1,4 +1,4 @@
-import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_B6I_4nxW.mjs';
+import { A as AstroError, E as ExpectedImage, L as LocalImageUsedWrongly, M as MissingImageDimension, U as UnsupportedImageFormat, I as IncompatibleDescriptorOptions, a as UnsupportedImageConversion, b as MissingSharp } from '../astro_DcP4r1Hm.mjs';
 
 function appendForwardSlash(path) {
   return path.endsWith("/") ? path : path + "/";
@@ -280,7 +280,7 @@ const baseService = {
     Object.entries(params).forEach(([param, key]) => {
       options[key] && searchParams.append(param, options[key].toString());
     });
-    const imageEndpoint = joinPaths("/LuxeChefs", "/_image");
+    const imageEndpoint = joinPaths("/", "/_image");
     return `${imageEndpoint}?${searchParams}`;
   },
   parseURL(url) {

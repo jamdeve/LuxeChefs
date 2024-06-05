@@ -1,10 +1,10 @@
-import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, i as renderHead, j as renderSlot, m as maybeRenderHead, k as renderComponent } from '../astro_B6I_4nxW.mjs';
+import { e as createComponent, r as renderTemplate, g as addAttribute, i as renderHead, j as renderSlot, h as createAstro, m as maybeRenderHead, k as renderComponent } from '../astro_DcP4r1Hm.mjs';
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
 /* empty css                          */
 
-const $$Astro = createAstro("https://luxe-chefs.vercel.app/");
+const $$Astro = createAstro();
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
@@ -12,7 +12,7 @@ const $$Layout = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`<html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator"${addAttribute(Astro2.generator, "content")}><title>${title}</title>${renderHead()}</head> <body> ${renderSlot($$result, $$slots["default"])} </body></html>`;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/layouts/Layout.astro", void 0);
 
-const Logo = new Proxy({"src":"/LuxeChefs/astro/LOGO.BAARfT2e.png","width":1090,"height":862,"format":"png"}, {
+const Logo = new Proxy({"src":"/astro/LOGO.BAARfT2e.png","width":1090,"height":862,"format":"png"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -30,7 +30,7 @@ const $$Nav = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate` ${maybeRenderHead()}<nav class="nav" id="nav" data-astro-cid-d6vcou2g> <div class="wrapper nav-wrapper" data-astro-cid-d6vcou2g> <img class="logo"${addAttribute(Logo.src, "src")} alt="Logo" data-astro-cid-d6vcou2g> <svg class="menu-mobile" id="menu-mobile" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;" data-astro-cid-d6vcou2g><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" data-astro-cid-d6vcou2g></path></svg> <div class="menu-mobile-modal disable" id="mobile-modal" data-astro-cid-d6vcou2g> <div class="menu-mobile-container" data-astro-cid-d6vcou2g> <ul class="mobile-list" data-astro-cid-d6vcou2g> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#galeria" data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> <li class="mobile-list-item" data-astro-cid-d6vcou2g> <a class="mobile-item-link" href="#eventos" data-astro-cid-d6vcou2g>FyQ</a> </li> </ul> </div> </div> <ul class="list" data-astro-cid-d6vcou2g> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#inicio" data-astro-cid-d6vcou2g>INICIO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#somos" data-astro-cid-d6vcou2g>SOMOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#servicios" data-astro-cid-d6vcou2g>SERVICIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#testimonios" data-astro-cid-d6vcou2g>TESTIMONIOS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#contacto" data-astro-cid-d6vcou2g>CONTACTO</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#galeria" data-astro-cid-d6vcou2g>TRABAJA CON NOSOTROS</a> </li> <li class="list-item" data-astro-cid-d6vcou2g> <a class="item-link" href="#eventos" data-astro-cid-d6vcou2g>FyQ</a> </li> </ul> </div> </nav> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/components/nav.astro", void 0);
 
-const Bg = new Proxy({"src":"/LuxeChefs/astro/heroImg.BiIDFg_K.jpeg","width":736,"height":552,"format":"jpg"}, {
+const Bg = new Proxy({"src":"/astro/heroImg.BiIDFg_K.jpeg","width":736,"height":552,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -71,7 +71,7 @@ Cada uno de nuestros chefs cuenta con un amplio conocimiento en técnicas culina
 </p> </article> <img class="logo"${addAttribute(Logo.src, "src")} alt="" data-astro-cid-qy4lt7y5> </div> </div> </section> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/nosotros.astro", void 0);
 
-const Star = new Proxy({"src":"/LuxeChefs/astro/Star.D6eVIpGw.svg","width":37,"height":40,"format":"svg"}, {
+const Star = new Proxy({"src":"/astro/Star.D6eVIpGw.svg","width":37,"height":40,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -84,7 +84,7 @@ const Star = new Proxy({"src":"/LuxeChefs/astro/Star.D6eVIpGw.svg","width":37,"h
 						}
 					});
 
-const Profesionalidad = new Proxy({"src":"/LuxeChefs/astro/profesionalidad.BlNmotia.svg","width":90,"height":90,"format":"svg"}, {
+const Profesionalidad = new Proxy({"src":"/astro/profesionalidad.BlNmotia.svg","width":90,"height":90,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -97,7 +97,7 @@ const Profesionalidad = new Proxy({"src":"/LuxeChefs/astro/profesionalidad.BlNmo
 						}
 					});
 
-const Comodidad = new Proxy({"src":"/LuxeChefs/astro/comodidad.9m8P3uLd.svg","width":90,"height":90,"format":"svg"}, {
+const Comodidad = new Proxy({"src":"/astro/comodidad.9m8P3uLd.svg","width":90,"height":90,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -110,7 +110,7 @@ const Comodidad = new Proxy({"src":"/LuxeChefs/astro/comodidad.9m8P3uLd.svg","wi
 						}
 					});
 
-const Altacocina = new Proxy({"src":"/LuxeChefs/astro/altacocina.BSIoaf4f.svg","width":90,"height":90,"format":"svg"}, {
+const Altacocina = new Proxy({"src":"/astro/altacocina.BSIoaf4f.svg","width":90,"height":90,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -133,7 +133,7 @@ Nuestros chefs no solo crean menús exquisitos, sino que también se encargan pe
 </p> </li> </ul> </div> </div> <div class="ventajas-numeros" data-astro-cid-72tiazw4> <div class="ventajas-numeros-item" data-astro-cid-72tiazw4> <span class="ventaja-nombre ventaja-nombre--chefs" data-astro-cid-72tiazw4>+500 CHEFS</span> <p class="ventaja-descripcion" data-astro-cid-72tiazw4>En Luxe Chefs contamos con una gran cantidad de chefs profesionales ubicados en distintas partes del mundo.</p> </div> <div class="ventajas-numeros-item" data-astro-cid-72tiazw4> <span class="ventaja-nombre ventaja-nombre--clientes" data-astro-cid-72tiazw4>+120 CLIENTES</span> <p class="ventaja-descripcion" data-astro-cid-72tiazw4>Debido a nuestro gran esfuerzo en satisfacer las necesidades de nuestros clientes, hemos podido llegar a la cifra de más de 120 clientes satisfechos.</p> </div> <div class="ventajas-numeros-item" data-astro-cid-72tiazw4> <span class="ventaja-nombre ventaja-nombre--ahorro" data-astro-cid-72tiazw4>+60h AHORRADAS</span> <p class="ventaja-descripcion" data-astro-cid-72tiazw4>Ya que nuestros chefs se encargarán de la cocina y de los ingredientes necesarios para cocinarle, usted ahorrará una gran cantidad de horas al mes.</p> </div> </div> </section> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/ventajas.astro", void 0);
 
-const GarantiaImg = new Proxy({"src":"/LuxeChefs/astro/garantia.Bw8VQ7l8.svg","width":547,"height":622,"format":"svg"}, {
+const GarantiaImg = new Proxy({"src":"/astro/garantia.Bw8VQ7l8.svg","width":547,"height":622,"format":"svg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -156,7 +156,7 @@ Es muy poco común que el cliente quiera cambiar de Chef, ya que con el primer C
 </p> </article> </div> </div> </section> `;
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/web/garantia.astro", void 0);
 
-const Test1 = new Proxy({"src":"/LuxeChefs/astro/testimonio1.ByKm_RJv.jpeg","width":1024,"height":1024,"format":"jpg"}, {
+const Test1 = new Proxy({"src":"/astro/testimonio1.ByKm_RJv.jpeg","width":1024,"height":1024,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -169,7 +169,7 @@ const Test1 = new Proxy({"src":"/LuxeChefs/astro/testimonio1.ByKm_RJv.jpeg","wid
 						}
 					});
 
-const Test2 = new Proxy({"src":"/LuxeChefs/astro/testimonio2.C_34oxWA.jpeg","width":1024,"height":1024,"format":"jpg"}, {
+const Test2 = new Proxy({"src":"/astro/testimonio2.C_34oxWA.jpeg","width":1024,"height":1024,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -182,7 +182,7 @@ const Test2 = new Proxy({"src":"/LuxeChefs/astro/testimonio2.C_34oxWA.jpeg","wid
 						}
 					});
 
-const Test3 = new Proxy({"src":"/LuxeChefs/astro/testimonio3.DDD3rsSZ.jpeg","width":1024,"height":1024,"format":"jpg"}, {
+const Test3 = new Proxy({"src":"/astro/testimonio3.DDD3rsSZ.jpeg","width":1024,"height":1024,"format":"jpg"}, {
 						get(target, name, receiver) {
 							if (name === 'clone') {
 								return structuredClone(target);
@@ -220,6 +220,6 @@ const $$Index = createComponent(($$result, $$props, $$slots) => {
 }, "/home/jamdeve/dev/Github/LuxeChefs/src/pages/index.astro", void 0);
 
 const $$file = "/home/jamdeve/dev/Github/LuxeChefs/src/pages/index.astro";
-const $$url = "/LuxeChefs";
+const $$url = "";
 
 export { $$Index as default, $$file as file, $$url as url };
