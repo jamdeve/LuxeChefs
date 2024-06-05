@@ -1,10 +1,10 @@
-import { e as createComponent, r as renderTemplate, g as addAttribute, i as renderHead, j as renderSlot, h as createAstro, m as maybeRenderHead, k as renderComponent } from '../astro_DcP4r1Hm.mjs';
+import { e as createAstro, f as createComponent, r as renderTemplate, h as addAttribute, i as renderHead, j as renderSlot, m as maybeRenderHead, k as renderComponent } from '../astro_B6I_4nxW.mjs';
 import 'kleur/colors';
 import 'html-escaper';
 import 'clsx';
 /* empty css                          */
 
-const $$Astro = createAstro();
+const $$Astro = createAstro("https://jamdeve.github.io/");
 const $$Layout = createComponent(($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Layout;
