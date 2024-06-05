@@ -31,7 +31,7 @@ jobs:
       - name: Upload to GitHub Pages
         uses: withastro/action@v2
         with:
-          path: './docs'
+          path: '/docs'
           package-manager: npm # O 'yarn' o 'pnpm' dependiendo de tu proyecto
           node-version: 22.2.0
 
