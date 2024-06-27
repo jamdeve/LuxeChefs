@@ -2,7 +2,8 @@
 import logo from '../assets/LOGO.png';
 ---
 
-<section class="somos" id="somos">
+<section class="somos">
+    <div class="view" id="somos"></div>
     <div class="wrapper somos-wrapper">
         <div class="somos-content">
             <article class="somos-article">
@@ -12,6 +13,9 @@ import logo from '../assets/LOGO.png';
                 </p>
                 <p class="somos-description">
                     En Luxe Chefs, nos enorgullece ofrecer un servicio de chefs privados de lujo diseñado exclusivamente para personas y familias que desean experimentar la excelencia culinaria sin tener que cocinar nunca más en la comodidad de su hogar.
+                </p>
+                <p class="somos-description">
+                    Nos encargamos de hacer la vida más fácil y cómoda a los clientes haciéndoles  ganar tiempo en su vida diária.
                 </p>
                 <p class="somos-description">
                     Nuestro equipo de talentosos y apasionados chefs se especializa en crear experiencias gastronómicas inolvidables, satisfaciendo los paladares más exigentes y superando todas las expectativas.
@@ -29,6 +33,12 @@ import logo from '../assets/LOGO.png';
 
     .somos{
         background-color: black;
+        position: relative;
+    }
+
+    .view{
+        position: absolute;
+        top: -100px;
     }
 
     .somos-content{

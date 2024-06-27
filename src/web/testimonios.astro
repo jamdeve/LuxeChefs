@@ -4,7 +4,8 @@ import Test2 from '../assets/testimonio2.jpeg'
 import Test3 from '../assets/testimonio3.jpeg'
 ---
 
-<section class="testimonios" id="testimonios">
+<section class="testimonios">
+    <div class="view" id="testimonios"></div>
     <div class="wrapper testimonios-wrapper">
         <div class="testimonios-content">
             <h2 class="testimonios-tittle" >TESTIMONIOS</h2>
@@ -44,6 +45,12 @@ import Test3 from '../assets/testimonio3.jpeg'
     .testimonios{
         width: 100%;
         overflow: hidden;
+        position: relative;
+    }
+
+    .view{
+        position: absolute;
+        top: -100px
     }
 
     .testimonios-content{
