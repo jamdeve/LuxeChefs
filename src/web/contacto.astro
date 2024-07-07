@@ -2,6 +2,43 @@
 
 ---
 
+<script>
+    const form = document.getElementById("form") as HTMLFormElement;
+
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault()
+          const formData = new FormData(form)
+          const data = {
+            name: formData.get('nombre'),
+            email: formData.get('email'),
+            telefono: formData.get('telefono'),
+            message: formData.get('mensaje'),
+          }
+
+          console.log(data)
+
+          try {
+              const response = await fetch('https://server-crimson-fog-7342.fly.dev/send-email'
+, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+              });
+
+              if (response.ok) {
+                alert('Email enviado correctamente');
+              } else {
+                alert('Error al enviar el email');
+              }
+            } catch (error) {
+              console.error('Error:', error);
+              alert('Error al enviar el email');
+            }
+    })
+</script>
+
 <section class="contacto">
     <div class="view" id="contacto"></div>
     <div class="wrapper contacto-wrapper">
@@ -24,7 +61,7 @@
             </div>
             <h2 class="contacto-subtittle" >-PEDIR PRESUPUESTO-</h2>
             
-            <form action="#" target="" method="get" name="formDatosPersonales">
+            <form action="#" target="_blank" method="POST" name="formDatosPersonales" id="form">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Marcos Serrano Rodriguez"/>
             
