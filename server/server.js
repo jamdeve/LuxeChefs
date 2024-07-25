@@ -24,7 +24,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: email, // Reemplaza con tu correo
-    to: 'jamdev0101@gmail.com',
+    to: 'luxechefs@gmail.com',
     subject: `Tienes un nuevo mensaje de: ${name}`,
     text: `
         Nombre: ${name}\n
