@@ -7,7 +7,7 @@ import Nosotros from '../web/nosotros.astro';
 import Ventajas from '../web/ventajas.astro';
 import Garantia from '../web/garantia.astro';
 import Testimonios from '../web/testimonios.astro';
-import Contacto from '../web/contacto.astro';
+import Contacto from '../web/contact.jsx';
 import Footer from '../components/footer.astro';
 import Faq from '../web/faq.astro';
 
@@ -23,6 +23,6 @@ import Faq from '../web/faq.astro';
 	<Garantia></Garantia>
 	<Testimonios></Testimonios>
 	<Faq></Faq>
-	<Contacto></Contacto>
+	<Contacto client:load></Contacto>
 	<Footer></Footer>
 </Layout>
