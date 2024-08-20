@@ -1,0 +1,128 @@
+
+---
+import GarantiaImg from '../assets/Health.jpeg'
+---
+
+<section class="garantia" id="garantia">
+    <div class="wrapper somos-garantia">
+        <div class="garantia-content">
+            <article class="garantia-article">
+                <h2 class="garantia-tittle">-SEGUIMIENTO DE SALUD-</h2>
+                <p class="garantia-description garantia-subtittle">
+                    ¿En Qué Consiste el Seguimiento de Salud con Luxe Chefs?
+                </p>
+                <p class="garantia-description">
+                    <span>1. Evaluación Corporal:</span>
+                     Con herramientas profesionales, realizamos un seguimiento detallado de tu progreso físico de manera online. Obtendrás mediciones precisas y evaluaciones que te ayudarán a entender mejor tu cuerpo.
+                </p>
+                <p class="garantia-description">
+                    <span>2. Plan de Nutrición Personalizado:</span>
+                    Desarrollamos un plan alimenticio hecho a medida, alineado con tus necesidades y objetivos personales.</p>
+                <p class="garantia-description">
+                    <span>3. Asesoramiento en Actividad Física:</span>
+                    Recibirás orientación especializada para mejorar tu bienestar general y optimizar tus resultados a través de la actividad física.</p>
+                <p class="garantia-description garantia-subtittle">
+                    Beneficios Exclusivos
+                </p>
+                <p class="garantia-description">
+                    <span>1. Nutrición y Ejercicio Combinados:</span>
+                    Te proporcionamos una guía completa y personalizada que integra nutrición y ejercicio para ayudarte a alcanzar tus metas de salud de manera más efectiva.
+                </p>
+                <p class="garantia-description">
+                    <span>2. Pericia Universitaria:</span>
+                    Tu seguimiento estará a cargo de un estudiante avanzado en Ciencias de la Actividad Física y del Deporte, quien aplicará las últimas metodologías científicas y utilizará recursos de vanguardia de la universidad.
+                </p>
+                <p class="garantia-description">
+                    <span>3. Resultados Tangibles:</span>
+                    Monitorea tu progreso y ajusta tu plan según sea necesario para asegurarte de que siempre estés en el camino hacia un estilo de vida más saludable.</p>
+                <p class="garantia-description garantia-subtittle">
+                    ¿Cómo Funciona?
+                </p>
+                <p class="garantia-description">
+                    <span>1. Contrata el Servicio de Luxe Chefs:</span>
+                    Realiza tu contratación durante el mes de septiembre para acceder a este servicio exclusivo.
+                </p>
+                <p class="garantia-description">
+                    <span>2. Recibe tu Primera Evaluación:</span>
+                    Nuestro estudiante de CAFD se pondrá en contacto contigo para programar tu primera evaluación y ayudarte a establecer tus objetivos de salud.</p>
+                <p class="garantia-description">
+                    <span>3. Disfruta de Comidas Deliciosas y Saludables:</span>
+                    Mientras nuestros chefs personales se encargan de tu alimentación diaria, tú podrás concentrarte en alcanzar tus metas de salud y bienestar con nuestro apoyo continuo.</p>
+            </article>
+            <img class="logo" src={GarantiaImg.src} alt="">
+        </div>
+    </div>
+</section>
+
+<style>
+
+    .garantia{
+        background-color: black;
+        padding: 2rem;
+    }
+
+    .garantia-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 50px 0 50px 0;
+    }
+
+    .garantia-article{
+        color: #FFEDBE;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1.1rem;
+        flex: 2;
+    }
+
+    .logo{
+        max-width: 50%;
+        flex: 1;
+        border-radius: 40px;
+    }
+
+    .garantia-tittle{
+        font-size: 40px;
+        font-weight: bold;
+        background: linear-gradient(to right, #F1CB6B, #8A6300); /* Cambia estos colores por los que desees */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        
+    }
+
+    .garantia-subtittle{
+        font-size: 1.5rem;
+        background: linear-gradient(to right, #F1CB6B, #8A6300); /* Cambia estos colores por los que desees */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+    }
+
+    .garantia-description span{
+        font-weight: bold;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+        .garantia-article{
+            width: 100%;
+        }
+
+        .garantia-tittle{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .garantia-content{
+            flex-direction: column;
+        }
+
+        .logo{
+            display: none;
+        }
+    }
+</style>
